@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link css local-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Conversor de Arquivo</title>
+</head>
+<body>
+    <main>
+        <section id="mainContainer">
+            <div class="container">
+                <h1>Conversor de anotações</h1>
+                <textarea required placeholder="Converta a sua anotação em arquivos txt, html, docs, js, css"></textarea>
+                <div class="btnConversor">
+                    <div class="btnConfig fileName">
+                        <label>Nome do Arquivo</label>
+                        <input type="text" placeholder="Plano do dia">
+                    </div>
+                    <div class="btnConfig selectOpnion">
+                        <label>Salvar como</label>
+                        <select name="opcoes">
+                            <option value="text/plain"> Text (.text)</option>
+                            <option value="	application/msword"> Docs (.docs)</option>
+                            <option value="text/html"> Html (.html)</option>
+                            <option value="text/css"> Css (.css)</option>
+                            <option value="text/javascript"> Js (.js)</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btnSaveAs">Salvar como</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
